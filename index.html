@@ -4,6 +4,7 @@
   <title>Bootstrap Example</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
@@ -24,28 +25,32 @@
   </div>
 </nav>
 
-<div class="container", style="margin-top:80px">
-  <div class="row">
-    <div class="col-lg-5", style="background-color: gray">
-		<img src="C:\Users\Martin\Pictures\profile-pic-dc.JPG", class="img-circle", style="height: 385px; width: 350px; display: block; margin: auto; ">
+<div class="container", id="main-container">
+  <div class="row vertical-align">
+    <div class="col-lg-5">
+		<img  src="C:\Users\Martin\Pictures\profile-pic-dc.JPG", class="img-circle", id="profile">
     </div>
-    <div class="col-lg-7", style="background-color: salmon">
-      <h1>Martin Chobanyan</h1>
-      <p>Hi, you have found my webpage!</p>
-      <p>I am currently a data scientist at Commonwealth Computer Research Inc. (CCRi), a geospatial analytics company in Charlottesville, VA. I am interested in all things machine learning, and especially in model interpretability and transfer learning research.</p>
-      <p>
-      	Below, you can find some personal projects I have worked on.
-      </p>
+    <div class="col-lg-7", id="intro-column">
+    	<div id="intro-text">
+    		<h1>Martin Chobanyan</h1>
+    		<p>Hi, you found my webpage!</p>
+    		<p>
+    			I am currently a data scientist at Commonwealth Computer Research Inc. (CCRi), a geospatial analytics company in Charlottesville, VA. I am interested in all things machine learning, and especially in model interpretability and transfer learning research.
+    	    </p>
+    	    <p>
+    	    	Below, you can find some personal projects I have worked on.
+    	    </p>
+    	</div>
     </div>
-  </div>.
-  <div class="row">
+  </div>
+  <div class="row", id="project-header">
   	<h1><b>Projects</b></h1>
   </div>
-  <div class="row", style="background-color: skyblue;">
-  	<img src="C:\Users\Martin\Pictures\kaggle-champs-banner.png", style="height: 400px; width: 80%; display: block; margin:auto">
+  <div class="row", id="kaggle-champs">
+  	<img src="C:\Users\Martin\Pictures\kaggle-champs-banner.png", class="project-banner">
   </div>
-    <div class="row", style="background-color: red">
-  	<img src="C:\Users\Martin\Pictures\kaggle-lanl-banner.png", style="height: 400px; width: 80%; display: block; margin:auto">
+    <div class="row", id="kaggle-lanl">
+  	<img src="C:\Users\Martin\Pictures\kaggle-lanl-banner.png", class="project-banner">
   </div>
 </div>
 
