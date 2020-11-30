@@ -45,18 +45,9 @@ p {
 	margin-top: 20px;
 }
 
-#kaggle-champs {
-	background-color: skyblue;
-}
-
-#kaggle-lanl {
-	background-color: gray;
-}
-
 .project-row {
 	margin: 20px;
 	position: relative;
-	/*background-color: skyblue;*/
 }
 
 .project-banner {
@@ -65,7 +56,7 @@ p {
 	/*margin:auto;*/
 	/*width: 80%; */
 	width: 100%; 
-	height: 400px; 
+	height: 450px; 
 }
 
 .overlay-description {
@@ -83,11 +74,21 @@ p {
 	visibility: visible;
 }
 
-.overlay-textual {
+.overlay-project-title {
 	color: white;
 	position: absolute;
 	width: 100%;
-	top: 50%;
+	top: 40%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.overlay-project-description {
+	color: white;
+	position: absolute;
+	width: 75%;
+	top: 60%;
 	left: 50%;
 	-webkit-transform: translate(-50%, -50%);
 	text-align: center;
