@@ -55,17 +55,48 @@ p {
 
 .project-row {
 	margin: 20px;
+	position: relative;
 	/*background-color: skyblue;*/
 }
 
 .project-banner {
 	border: 1px solid black;
-	height: 400px; 
-	width: 80%; 
 	display: block; 
-	margin:auto;
+	/*margin:auto;*/
+	/*width: 80%; */
+	width: 100%; 
+	height: 400px; 
 }
 
-.project-banner:hover {
-	opacity: 0.5;
+.overlay-description {
+	visibility: hidden;
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0.8;
+	background-color: #646464;
+}
+
+.project-row:hover .overlay-description {
+	visibility: visible;
+}
+
+.overlay-textual {
+	color: white;
+	position: absolute;
+	width: 100%;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.project-title {
+	font-size: 36px;
+}
+
+.project-description {
+	font-size: 24px;
 }
