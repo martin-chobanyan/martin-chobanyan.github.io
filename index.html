@@ -6,12 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
   
-<nav class="navbar navbar-nav navbar-fixed-top">
+<!-- <nav class="navbar navbar-nav navbar-fixed-top">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Martin Chobanyan</a>
@@ -23,35 +24,58 @@
       <li><a href="#">Page 3</a></li>
     </ul>
   </div>
-</nav>
+</nav> -->
 
 <div class="container", id="main-container">
   <div class="row vertical-align">
     <div class="col-lg-5">
-		<img  src="C:\Users\Martin\Pictures\profile-pic-dc.JPG", class="img-circle", id="profile">
+		<img src="C:\Users\Martin\Pictures\profile-pic-dc.JPG", class="img-circle", id="profile">
     </div>
     <div class="col-lg-7", id="intro-column">
-    	<div id="intro-text">
-    		<h1>Martin Chobanyan</h1>
-    		<p>Hi, you found my webpage!</p>
-    		<p>
-    			I am currently a data scientist at Commonwealth Computer Research Inc. (CCRi), a geospatial analytics company in Charlottesville, VA. I am interested in all things machine learning, and especially in model interpretability and transfer learning research.
-    	    </p>
-    	    <p>
-    	    	Below, you can find some personal projects I have worked on.
-    	    </p>
+    	<div id="intro-block">
+    		<h1 style="font-size: 40px">Martin Chobanyan</h1>
+    	    <a href="https://github.com/martin-chobanyan", class="media-links">Github: <i class="fa fa-github"></i></a>
+    	    <a href="https://www.linkedin.com/in/martinchobanyan/", class="media-links">LinkedIn: <i class="fa fa-linkedin"></i></a>
+
+    	    <div id="intro-text">
+    	    	<p>Hi, you found my webpage!</p>
+    	    	<p>
+	    			I am currently a data scientist at Commonwealth Computer Research Inc. (CCRi), a geospatial analytics company in Charlottesville, VA.
+	    	    </p>
+	    	    <p>
+	    	    	I am interested in all things machine learning, and especially in model interpretability and transfer learning research.
+	    	    </p>
+	    	    <p>
+	    	    	You can find some of my personal projects below.
+	    	    </p>
+    		</div>
     	</div>
     </div>
   </div>
   <div class="row", id="project-header">
   	<h1><b>Projects</b></h1>
   </div>
-  <div class="row", id="kaggle-champs">
-  	<img src="C:\Users\Martin\Pictures\kaggle-champs-banner.png", class="project-banner">
+  <div class="row project-row view-overlay", id="kaggle-champs">
+  	<img src="C:\Users\Martin\Pictures\kaggle-champs-banner.png", class="project-banner img-fluid ">
+    <div class="mask flex-center rgba-red-strong">
+        <p class="white-text">Strong overlay</p>
+    </div>
+<!--   	<a href="https://github.com/martin-chobanyan/champs_molecular_prediction">
+  		<img src="C:\Users\Martin\Pictures\kaggle-champs-banner.png", class="project-banner">
+  	</a> -->
   </div>
-    <div class="row", id="kaggle-lanl">
-  	<img src="C:\Users\Martin\Pictures\kaggle-lanl-banner.png", class="project-banner">
-  </div>
+<!--   <div class="row project-row", id="kaggle-lanl">
+  	<a href="https://github.com/martin-chobanyan/lanl_earthquake/blob/master/my_approach.ipynb">
+  		<img src="C:\Users\Martin\Pictures\kaggle-lanl-banner.png", class="project-banner">
+  	</a>
+  </div> -->
+</div>
+
+<div class="view overlay">
+    <img src="https://mdbootstrap.com/img/Photos/Horizontal/City/6-col/img%20(3).jpg" class="img-fluid " alt="">
+    <div class="mask flex-center rgba-red-strong">
+        <p class="white-text">Strong overlay</p>
+    </div>
 </div>
 
 </body>

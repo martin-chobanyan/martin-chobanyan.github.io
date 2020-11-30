@@ -1,9 +1,18 @@
+p {
+	font-size: 22px;
+}
+
 .row{
     overflow: hidden; 
 }
 
+.fa {
+	font-size: 60px;
+}
+
 #main-container {
 	margin-top: 80px;
+	margin-bottom: 80px;
 }
 
 #profile {
@@ -18,13 +27,18 @@
     align-items: center;
 }
 
-#intro-column {
-
+#intro-block {
+	margin-bottom: 100px;
 }
 
 #intro-text {
-	background-color: white;
-	margin-bottom: 100px;
+	margin-top: 20px;
+}
+
+.media-links {
+	font-size: 24px;
+	margin-right: 20px;
+	margin-top: 20px;
 }
 
 #project-header {
@@ -39,10 +53,19 @@
 	background-color: gray;
 }
 
+.project-row {
+	margin: 20px;
+	/*background-color: skyblue;*/
+}
+
 .project-banner {
+	border: 1px solid black;
 	height: 400px; 
 	width: 80%; 
 	display: block; 
-	margin:auto
+	margin:auto;
 }
 
+.project-banner:hover {
+	opacity: 0.5;
+}
