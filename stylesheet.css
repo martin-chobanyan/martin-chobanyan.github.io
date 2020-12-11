@@ -12,10 +12,11 @@ p {
 }
 
 #profile {
-	height: 385px; 
-	width: 350px; 
+	height: 350px;
+	width: 395px;
 	display: block; 
 	margin: auto;
+	margin-bottom: 40px;
 }
 
 .vertical-align {
