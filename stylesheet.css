@@ -1,4 +1,4 @@
-p {
+p, #experience-block li {
 	font-size: 22px;
 }
 
@@ -36,6 +36,28 @@ p {
 	font-size: 24px;
 	margin-right: 20px;
 	margin-top: 20px;
+}
+
+#experience-row {
+	padding-top: 30px;
+}
+
+#experience-images {
+	/*background-color: lightblue*/
+}
+
+#experience-text {
+	/*background-color: lightgray*/
+}
+
+#experience-images img {
+	display: block;
+	margin: auto;
+}
+
+#ccri-logo {
+	width: 75%;
+	height: 75%;
 }
 
 #projects, #competitions {
