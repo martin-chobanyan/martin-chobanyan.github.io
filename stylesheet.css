@@ -38,8 +38,8 @@ p {
 	margin-top: 20px;
 }
 
-#project-header {
-	margin-top: 20px;
+#projects, #competitions {
+	margin-top: 50px;
 }
 
 .project-row {
