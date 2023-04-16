@@ -46,24 +46,19 @@ p, #experience-block li {
 	margin-top: 20px;
 }
 
-#experience-row {
+.experience-row {
 	padding-top: 30px;
 }
 
-#experience-images {
+.experience-images {
 	/*background-color: lightblue*/
 }
 
-#experience-text {
+.experience-text {
 	/*background-color: lightgray*/
 }
 
-#experience-images img {
-	display: block;
-	margin: auto;
-}
-
-#ccri-logo {
+.experience-images img {
 	width: 75%;
 	height: 75%;
 }
