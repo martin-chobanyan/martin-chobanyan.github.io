@@ -49,6 +49,10 @@ p, #experience-block li {
 	padding-top: 30px;
 }
 
+.experience-row.vertical-align {
+    align-items: flex-start;
+}
+
 .experience-images {
 	/*background-color: lightblue*/
 }
@@ -62,6 +66,10 @@ p, #experience-block li {
 	margin: auto;
 	width: 75%;
 	height: 75%;
+}
+
+#homes-logo {
+	width: 100%;
 }
 
 #projects, #competitions {
