@@ -46,7 +46,7 @@
       	    <div id="intro-text">
       	    	<p>Hi, you found my webpage!</p>
       	    	<p>
-                I am a machine learning scientist who loves to explore new domains and use machine learning to solve difficult problems.
+                I am a machine learning engineer who loves to explore new domains and use machine learning to solve difficult problems.
               </p>
   	    	    <p>
   	    	    	You can find more about my work and interests below.
@@ -74,8 +74,15 @@
             At SmileDirectClub, I explored the reconstruction, positioning, and generative modeling of 3D teeth using multi-view customer images.
           </p>
           <p>
-            In particular, I was one of the key developers of the 2D-to-3D dental arch reconstruction model for <a href="https://www.globenewswire.com/news-release/2023/05/31/2679363/0/en/SmileDirectClub-Announces-U-S-Launch-of-Patented-SmileMaker-Platform.html">SmileMaker Platform</a>, a real-time app which delivers personalized treatment plans for thousands of daily customers using completely self-guided smartphone imaging.
+            I was one of the key developers of the 2D-to-3D dental arch reconstruction model for <a href="https://www.globenewswire.com/news-release/2023/05/31/2679363/0/en/SmileDirectClub-Announces-U-S-Launch-of-Patented-SmileMaker-Platform.html">SmileMaker Platform</a>, a real-time app which delivered personalized treatment plans for thousands of daily customers using completely self-guided smartphone imaging.
           </p>
+          <p>
+            After the deployment, I pretrained a Vision Transformer in a self-supervised manner on 5+ million images collected from our app. This model served as a strong backbone image encoder and improved the performance and robustness of our teeth segmentation model (which is the foundation of all of our 2D-to-3D reconstructions).
+          </p>
+          <video width="640" height="360" controls>
+            <source src="resources/videos/mae-vit-teeth-seg-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
           <p>We have released a <a href="https://patents.justia.com/patent/11633260">patent</a> for the positioning of 3D model teeth using information across multi-view, 2D images.</p>
         </div>
       </div>
