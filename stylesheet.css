@@ -39,6 +39,20 @@ nav a {
 	font-size: 20px;	
 }
 
+/*Media links*/
+.media-links {
+  font-size: 20px;
+  margin-right: 16px;
+  margin-top: 10px;
+  display: inline-block;
+  color: #444;
+  transition: color 0.3s ease;
+}
+.media-links:hover {
+  color: #007BFF;
+  text-decoration: none;
+}
+
 
 p, #experience-block li {
 	font-size: 22px;
