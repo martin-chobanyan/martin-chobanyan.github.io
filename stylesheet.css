@@ -53,6 +53,12 @@ nav a {
   text-decoration: none;
 }
 
+/*Global image and video tweaks*/
+img.img-responsive, video {
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+}
+
 
 p, #experience-block li {
 	font-size: 22px;
@@ -149,6 +155,16 @@ p, #experience-block li {
 	width: 100%; 
 	height: 500px; 
 }
+
+.overlay-project-title, .overlay-project-description {
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+.overlay-description {
+  background-color: rgba(0, 0, 0, 0.75);
+  transition: all 0.1s ease;
+}
+
 
 .overlay-description {
 	visibility: hidden;
