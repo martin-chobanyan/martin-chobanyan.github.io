@@ -2,9 +2,43 @@ html {
   scroll-behavior: smooth;
 }
 
+/*Typography*/
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  line-height: 1.7;
+  color: #333;
+}
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 38px;
+}
+h3 {
+  font-size: 24px;
+}
+
+
+
+/*Navbar*/
+.navbar-brand {
+  font-weight: 600;
+  font-size: 22px;
+}
+.navbar-nav > li > a {
+  color: #333 !important;
+  font-weight: 500;
+  transition: color 0.2s ease;
+}
+.navbar-nav > li > a:hover {
+  color: #007BFF !important;
+}
+
 nav a {
 	font-size: 20px;	
 }
+
 
 p, #experience-block li {
 	font-size: 22px;
@@ -76,12 +110,21 @@ p, #experience-block li {
 	margin-top: 50px;
 }
 
+/*flat modern card style*/
 .project-row {
-	margin-top: 30px;
-	margin-bottom: 30px;
-	position: relative;
-	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-top: 30px;
+  margin-bottom: 30px;
+  position: relative;
+  background-color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: transform 0.2s ease;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
+.project-row:hover {
+  transform: translateY(-4px);
+}
+
 
 #transfer-vis {
 	margin-top: 10px;
