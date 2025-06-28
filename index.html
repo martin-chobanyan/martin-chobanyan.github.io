@@ -7,15 +7,22 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.0/css/all.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
 </head>
 
 <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <nav class="navbar navbar-default navbar-fixed-top" style="border-bottom: 1px solid #eaeaea; background-color: #ffffff;">
     <div class="container-fluid">
       <div class="navbar-header">
+        
+        <!-- hamburger menu -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
         <a class="navbar-brand" href="#intro">Martin Chobanyan</a>
       </div>
       <div>
@@ -33,26 +40,26 @@
   <div class="container", id="main-container">
     <div class="row vertical-align row-title", id="intro">
       <div class="col-sm-5">
-  		<img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/uva-selfie.jpg", class="img-responsive", id="profile">
+      <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/uva-selfie.jpg", class="img-responsive", id="profile">
       </div>
       <div class="col-sm-7", id="intro-column">
-      	<div id="intro-block">
-      		<h1 style="font-size: 40px">Martin Chobanyan</h1>
-      	    <a href="https://github.com/martin-chobanyan", class="media-links", target="_blank", rel="noreferrer noopener">Github: <i class="fab fa-github"></i></a>
-      	    <a href="https://www.linkedin.com/in/martinchobanyan/", class="media-links", target="_blank", rel="noreferrer noopener">LinkedIn: <i class="fab fa-linkedin"></i>
+        <div id="intro-block">
+          <h1 style="font-size: 40px">Martin Chobanyan</h1>
+            <a href="https://github.com/martin-chobanyan", class="media-links", target="_blank", rel="noreferrer noopener">Github <i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/martinchobanyan/", class="media-links", target="_blank", rel="noreferrer noopener">LinkedIn <i class="fab fa-linkedin"></i>
             </a>
-            <a href="https://www.kaggle.com/mch123", class="media-links", target="_blank", rel="noreferrer noopener">Kaggle: <i class="fab fa-kaggle"></i></a>
+            <a href="https://www.kaggle.com/mch123", class="media-links", target="_blank", rel="noreferrer noopener">Kaggle <i class="fab fa-kaggle"></i></a>
 
-      	    <div id="intro-text">
-      	    	<p>Hi, you found my webpage!</p>
-      	    	<p>
-                I am a machine learning scientist who loves to explore new domains and use machine learning to solve difficult problems.
+            <div id="intro-text">
+              <p>Hi, you found my webpage!</p>
+              <p>
+                I am a machine learning engineer who loves to explore new domains and solve difficult problems.
               </p>
-  	    	    <p>
-  	    	    	You can find more about my work and interests below.
-  	    	    </p>
-      		</div>
-      	</div>
+              <p>
+                You can find more about my work and interests below.
+              </p>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -62,39 +69,101 @@
     </div>
 
     <div class="container", id="experience-block">
+
+      <!-- Homes.com -->
       <div class="row vertical-align experience-row">
+
         <div class="col-sm-4 experience-images">
-          <img src="https://s3.us-east-2.amazonaws.com/lipco-product-images/outlook/outlook_items/D03972SMDRBK.jpg", id="sdc-logo" class="img-responsive">
+          <img src="resources/images/homes-logo.png", id="homes-logo" class="img-responsive">
         </div>
+
+        <div class="col-sm-8 experience-text">
+          <h1>Lead Machine Learning Engineer</h1>
+          <p><i>Feb 2024 - Present</i></p>
+          <h3>Machine Learning at Homes.com</h3>
+          <p>
+            I design and deploy production-grade machine learning systems that power key features across the website, including:
+            <ul>
+              <li>Image tagging to detect listing amenities and features</li>
+              <li>Amenity extraction from listing descriptions using LLMs</li>
+              <li>Multi-stage, product oriented image quality assessment to ensure high quality image standards</li>
+            </ul>
+          </p>
+
+          <h3>Lead Developer and Mentor</h3>
+          <p>
+            As a lead engineer, I played a key role in designing technical roadmaps for our projects and setting coding standards and best practices within our team by writing guidelines and mentoring teammates.
+          </p>
+        </div>
+
+      </div>
+
+      <!-- SmileDirectClub -->
+      <div class="row vertical-align experience-row">
+
+        <div class="col-sm-4 experience-images">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Smile_Direct_Club_logo.svg", id="sdc-logo" class="img-responsive">
+        </div>
+
         <div class="col-sm-8 experience-text">
           <h1>Senior Machine Learning Scientist</h1>
-          <p><i>Jul 2021 - Present</i></p>
-          <br>
+          <p><i>Jul 2021 - Dec 2023</i></p>
+          <h3>Patent</h3>
           <p>
-            At SmileDirectClub, I explored the reconstruction, positioning, and generative modeling of 3D teeth using multi-view customer images.
+            At SmileDirectClub, I worked on the reconstruction, positioning, and generative modeling of 3D teeth from smartphone images and co-authored a <a href="https://patents.justia.com/patent/11633260" target="_blank">patent</a> in this topic.
+          </p>
+          <h3>App Launch</h3>
+          <p>
+            I was one of the key developers of the backend 2D-to-3D dental arch reconstruction model for <a href="https://www.globenewswire.com/news-release/2023/05/31/2679363/0/en/SmileDirectClub-Announces-U-S-Launch-of-Patented-SmileMaker-Platform.html" target="_blank">SmileMaker Platform</a>, an app which delivered personalized treatment plan previews for thousands of daily customers using AI-guided smartphone imaging.
+          </p>
+          <div class="row vertical-align">
+            <div class="col-sm-6">
+              <img src="resources/images/smp-2d-3d-corrs.png" class="img-responsive">
+              <!-- <img src="resources/images/smp-input.png" class="img-responsive"> -->
+            </div>
+            <div class="col-sm-6">
+              <img src="resources/images/smp-3d-render.png" class="img-responsive">
+              <!-- <img src="resources/images/smp-3d-viewer.png" class="img-responsive"> -->
+            </div>
+          </div>
+          <h3>Vision Transformer Pre-training</h3>
+          <p>
+            After the initial launch, I pre-trained a Vision Transformer using self-supervised learning (<a href="https://arxiv.org/abs/2111.06377" target="_blank">MAE</a>) on over five million images collected by our app and integrated it as the backbone for our teeth segmentation model (which underlied all 3D reconstructions).
           </p>
           <p>
-            In particular, I was one of the key developers of the 2D-to-3D dental arch reconstruction model for <a href="https://www.globenewswire.com/news-release/2023/05/31/2679363/0/en/SmileDirectClub-Announces-U-S-Launch-of-Patented-SmileMaker-Platform.html">SmileMaker Platform</a>, a real-time app which delivers personalized treatment plans for thousands of daily customers using completely self-guided smartphone imaging.
+            This dramatically improved segmentation robustness, especially in real-world imaging conditions (blurry and dimly lit smartphone photos), without requiring further manual annotation.
           </p>
-          <p>We have released a <a href="https://patents.justia.com/patent/11633260">patent</a> for the positioning of 3D model teeth using information across multi-view, 2D images.</p>
+          <div class="embed-responsive embed-responsive-16by9">
+            <video class="embed-responsive-item" controls>
+              <source src="resources/videos/mae-vit-teeth-seg-demo.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
+
       </div>
+
+      <!-- SmileDirectClub -->
       <div class="row vertical-align experience-row">
+
         <div class="col-sm-4 experience-images">
-          <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/ccri-logo.png" class="img-responsive">
+          <img src="resources/images/ga-ccri-logos.png" class="img-responsive">
         </div>
+
         <div class="col-sm-8 experience-text">
           <h1>Data Scientist</h1>
           <p><i>Jan 2018 - Jul 2021</i></p>
           <br>
           <p>
-            <a href="https://ccri.com", target="_blank", rel="noreferrer noopener">CCRi</a> is a geospatial analytics company where I worked on various research projects involving maritime activity detection and vessel forcasting from large scale AIS trajectory data.
+            At <a href="https://www.ga-intelligence.com/", target="_blank", rel="noreferrer noopener">GA-CCRi</a> (now General Atomics Intelligence) I worked on government-contract research projects for maritime and aerospace activity detection using massive trajectory data sources.
           </p>
           <p>
-            I presented my work in a speaker role at the 2019 Tom Tom Applied Machine Learning Conference in a session named <a href="https://tomtomfestival2019.sched.com/event/M3Os/points-to-videos-extracting-behavioral-information-from-maritime-tracks-using-convolutional-neural-networks">Points to Videos: Extracting Behavioral Information from Maritime Tracks Using Convolutional Neural Networks</a>.
+            I presented my work in a speaker role at the 2019 Tom Tom Applied Machine Learning Conference in a session named <a href="https://tomtomfestival2019.sched.com/event/M3Os/points-to-videos-extracting-behavioral-information-from-maritime-tracks-using-convolutional-neural-networks", target="_blank">Points to Videos: Extracting Behavioral Information from Maritime Tracks Using Convolutional Neural Networks</a>.
           </p>
         </div>
       </div>
+
+      <!-- UVA -->
       <div class="row vertical-align experience-row">
         <div class="col-sm-4 experience-images">
           <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/uva-logo.png" class="img-responsive">
@@ -108,71 +177,72 @@
           </p>
         </div>
       </div>
+
     </div>
 
     <div class="row row-title", id="projects">
-    	<h1><b>Personal Projects</b></h1>
+      <h1><b>Personal Projects</b></h1>
     </div>
 
     <div class="row project-row", id="transfer-vis">
-    	<img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/transfer-vis-banner.png", class="project-banner  img-responsive">
-    	<a href="https://towardsdatascience.com/visualizing-change-in-neural-networks-eea86529a9f3", target="_blank", rel="noreferrer noopener">
-  	  	<div class="overlay-description">
-  	  		<div class="overlay-project-title">
-  	  			<p class="project-title">
-  	  				<strong>Visualizing Change in Neural Networks</strong>
-  	  				<i class="fa fa-arrow-right fa-3x"></i>
-  	  			</p>
-  	  		</div>
-  	  		<div class="overlay-project-description">
-  	  			<p class="project-description">
-  	  				An experiment to assess the change in feature visualizations of a neural network as it is fine-tuned to a new task 
-  	  		    </p>
+      <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/transfer-vis-banner.png", class="project-banner  img-responsive">
+      <a href="https://towardsdatascience.com/visualizing-change-in-neural-networks-eea86529a9f3", target="_blank", rel="noreferrer noopener">
+        <div class="overlay-description">
+          <div class="overlay-project-title">
+            <p class="project-title">
+              <strong>Visualizing Change in Neural Networks</strong>
+              <i class="fas fa-external-link-alt"></i>
+            </p>
+          </div>
+          <div class="overlay-project-description">
+            <p class="project-description">
+              An experiment to assess the change in feature visualizations of a neural network as it is fine-tuned to a new task 
+              </p>
 
-  	  		</div>
-  	  	</div>
-    	</a>
+          </div>
+        </div>
+      </a>
     </div>
 
       <div class="row project-row", id="emotion-detection">
-    	<img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/emotion-detection-banner.png", class="project-banner  img-responsive">
-    	<a href="https://towardsdatascience.com/training-an-emotion-detector-with-transfer-learning-91dea84adeed", target="_blank", rel="noreferrer noopener">
-  	  	<div class="overlay-description">
-  	  		<div class="overlay-project-title">
-  	  			<p class="project-title">
-  	  				<strong>Emotion Detection with Transfer Learning</strong>
-  	  				<i class="fa fa-arrow-right fa-3x"></i>
-  	  			</p>
-  	  		</div>
-  	  		<div class="overlay-project-description">
-  	  			<p class="project-description">
-  	  				Creating an emotion detector using pre-trained computer vision models, transfer learning, and a nifty way to create a custom dataset using Google Images
-  	  		    </p>
-  	  		</div>
-  	  	</div>
-    	</a>
+      <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/emotion-detection-banner.png", class="project-banner  img-responsive">
+      <a href="https://towardsdatascience.com/training-an-emotion-detector-with-transfer-learning-91dea84adeed", target="_blank", rel="noreferrer noopener">
+        <div class="overlay-description">
+          <div class="overlay-project-title">
+            <p class="project-title">
+              <strong>Emotion Detection with Transfer Learning</strong>
+              <i class="fas fa-external-link-alt"></i>
+            </p>
+          </div>
+          <div class="overlay-project-description">
+            <p class="project-description">
+              Creating an emotion detector using pre-trained computer vision models, transfer learning, and a nifty way to create a custom dataset using Google Images
+              </p>
+          </div>
+        </div>
+      </a>
     </div>
 
     <div class="row row-title", id="competitions">
       <h1><b>Competitions</b></h1>
     </div>
     <div class="row project-row", id="kaggle-champs">
-    	<img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/kaggle-champs-banner.png", class="project-banner  img-responsive">
-    	<a href="https://github.com/martin-chobanyan/champs_molecular_prediction", target="_blank", rel="noreferrer noopener">
-  	  	<div class="overlay-description">
-  	  		<div class="overlay-project-title">
-  	  			<p class="project-title">
-  	  				<strong>CHAMPS Molecular Prediction (Top 5% Finish)</strong>
-  	  				<i class="fa fa-arrow-right fa-3x"></i>
-  	  			</p>
-  	  		</div>
-  	  		<div class="overlay-project-description">
-  	  			<p class="project-description">
-  	  				Predicting molecular properties using graph convolutional neural networks and chemical descriptors
-  	  		    </p>
-  	  		</div>
-  	  	</div>
-    	</a>
+      <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/kaggle-champs-banner.png", class="project-banner  img-responsive">
+      <a href="https://github.com/martin-chobanyan/champs_molecular_prediction", target="_blank", rel="noreferrer noopener">
+        <div class="overlay-description">
+          <div class="overlay-project-title">
+            <p class="project-title">
+              <strong>CHAMPS Molecular Prediction (Top 5% Finish)</strong>
+              <i class="fas fa-external-link-alt"></i>
+            </p>
+          </div>
+          <div class="overlay-project-description">
+            <p class="project-description">
+              Predicting molecular properties using graph convolutional neural networks and chemical descriptors
+              </p>
+          </div>
+        </div>
+      </a>
     </div>
     
     <div class="row project-row", id="kaggle-champs">
@@ -182,7 +252,7 @@
           <div class="overlay-project-title">
             <p class="project-title">
               <strong>HPA Single Cell Classification (Top 6% Finish)</strong>
-              <i class="fa fa-arrow-right fa-3x"></i>
+              <i class="fas fa-external-link-alt"></i>
             </p>
           </div>
           <div class="overlay-project-description">
@@ -195,22 +265,22 @@
     </div>
 
     <div class="row project-row", id="kaggle-lanl">
-    	<img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/kaggle-lanl-banner.png", class="project-banner  img-responsive">
-    	<a href="https://github.com/martin-chobanyan/lanl_earthquake/blob/master/my_approach.ipynb", target="_blank", rel="noreferrer noopener">
-  	  	<div class="overlay-description">
-  	  		<div class="overlay-project-title">
-  	  			<p class="project-title">
-  	  				<strong>LANL Earthquake Prediction</strong>
-  	  				<i class="fa fa-arrow-right fa-3x"></i>
-  	  			</p>
-  	  		</div>
-  	  		<div class="overlay-project-description">
-  	  			<p class="project-description">
-  	  				Predicting the next seismic event in simulated earthquake data using an ensemble of deep learning techniques
-  	  		    </p>
-  	  		</div>
-  	  	</div>
-    	</a>
+      <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/kaggle-lanl-banner.png", class="project-banner  img-responsive">
+      <a href="https://github.com/martin-chobanyan/lanl_earthquake/blob/master/my_approach.ipynb", target="_blank", rel="noreferrer noopener">
+        <div class="overlay-description">
+          <div class="overlay-project-title">
+            <p class="project-title">
+              <strong>LANL Earthquake Prediction</strong>
+              <i class="fas fa-external-link-alt"></i>
+            </p>
+          </div>
+          <div class="overlay-project-description">
+            <p class="project-description">
+              Predicting the next seismic event in simulated earthquake data using an ensemble of deep learning techniques
+              </p>
+          </div>
+        </div>
+      </a>
     </div>
 
   </div>
