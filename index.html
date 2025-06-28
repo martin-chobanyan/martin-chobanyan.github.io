@@ -90,22 +90,37 @@
           <h1>Senior Machine Learning Scientist</h1>
           <p><i>Jul 2021 - Dec 2023</i></p>
           <br>
+          <h3>Patent</h3>
           <p>
-            At SmileDirectClub, I worked on the reconstruction, positioning, and generative modeling of 3D teeth using multi-view customer images.
+            At SmileDirectClub, I worked on the reconstruction, positioning, and generative modeling of 3D teeth from smartphone images and co-authored a <a href="https://patents.justia.com/patent/11633260" target="_blank">patent</a> in this topic.
           </p>
+          <h3>App Launch</h3>
           <p>
-            I was one of the key developers of the 2D-to-3D dental arch reconstruction model for <a href="https://www.globenewswire.com/news-release/2023/05/31/2679363/0/en/SmileDirectClub-Announces-U-S-Launch-of-Patented-SmileMaker-Platform.html">SmileMaker Platform</a>, a real-time app which delivered personalized treatment plans for thousands of daily customers using completely self-guided smartphone imaging.
+            I was one of the key developers of the backend 2D-to-3D dental arch reconstruction model for <a href="https://www.globenewswire.com/news-release/2023/05/31/2679363/0/en/SmileDirectClub-Announces-U-S-Launch-of-Patented-SmileMaker-Platform.html" target="_blank">SmileMaker Platform</a>, an app which delivered personalized treatment plan previews for thousands of daily customers using AI-guided smartphone imaging.
           </p>
-          <p>
-            Post-launch, I pre-trained a Vision Transformer (ViT) on 5+ million customer images in a self-supervised fashion. This ViT became the backbone of our upgraded teeth segmentation model, significantly boosting robustness and accuracy
 
-            After the deployment, I pretrained a Vision Transformer (ViT) in a self-supervised manner on 5+ million images collected by our app. This ViT model served as a strong backbone image encoder and improved the performance and robustness of our teeth segmentation model (which is the first step and the foundation for all of our 2D-to-3D reconstructions).
+          <div class="row vertical-align">
+            <div class="col-sm-6">
+              <img src="resources/images/smp-2d-3d-corrs.png" class="img-responsive">
+              <!-- <img src="resources/images/smp-input.png" class="img-responsive"> -->
+            </div>
+            <div class="col-sm-6">
+              <img src="resources/images/smp-3d-render.png" class="img-responsive">
+              <!-- <img src="resources/images/smp-3d-viewer.png" class="img-responsive"> -->
+            </div>
+          </div>
+          
+          <h3>Vision Transformer Pre-training</h3>
+          <p>
+            After the initial launch, I pre-trained a Vision Transformer using self-supervised learning (<a href="https://arxiv.org/abs/2111.06377" target="_blank">MAE</a>) on over five million images collected by our app and integrated it as the backbone for our teeth segmentation model (which underlied all 3D reconstructions).
+          </p>
+          <p>
+            This dramatically improved segmentation robustness, especially to real-world imaging conditions (blurry and dimly lit smartphone photos) without requiring further manual annotation.
           </p>
           <video width="640" height="360" controls>
             <source src="resources/videos/mae-vit-teeth-seg-demo.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
-          <p>We have released a <a href="https://patents.justia.com/patent/11633260">patent</a> for the positioning of 3D model teeth using information across multi-view, 2D images.</p>
         </div>
       </div>
       <div class="row vertical-align experience-row">
