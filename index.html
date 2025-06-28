@@ -46,7 +46,7 @@
       	    <div id="intro-text">
       	    	<p>Hi, you found my webpage!</p>
       	    	<p>
-                I am a machine learning engineer who loves to explore new domains and use machine learning to solve difficult problems.
+                I am a machine learning engineer who loves to explore new domains and solve difficult problems.
               </p>
   	    	    <p>
   	    	    	You can find more about my work and interests below.
@@ -63,33 +63,43 @@
 
     <div class="container", id="experience-block">
 
+      <!-- Homes.com -->
       <div class="row vertical-align experience-row">
+
         <div class="col-sm-4 experience-images">
           <img src="resources/images/homes-logo.png", id="homes-logo" class="img-responsive">
         </div>
+
         <div class="col-sm-8 experience-text">
           <h1>Lead Machine Learning Engineer</h1>
           <p><i>Feb 2024 - Present</i></p>
-          <br>
+          <h3>Multimodal AI</h3>
           <p>
-            PLACEHOLDER I
+            - Image tagging using multimodal AI
+            - Amenity extraction from text
+            - Image quality assessment
+            - Deployment to production with structured streaming
           </p>
+          <h3>Lead Developer and Mentoring</h3>
           <p>
-            PLACEHOLDER II
+            Set coding and data standards.
+            Developed standard machine learning packages and interfaces.
+            As a lead engineer, I mentored.          
           </p>
         </div>
+
       </div>
 
+      <!-- SmileDirectClub -->
       <div class="row vertical-align experience-row">
+
         <div class="col-sm-4 experience-images">
-
           <img src="https://upload.wikimedia.org/wikipedia/commons/a/ae/Smile_Direct_Club_logo.svg", id="sdc-logo" class="img-responsive">
-
         </div>
+
         <div class="col-sm-8 experience-text">
           <h1>Senior Machine Learning Scientist</h1>
           <p><i>Jul 2021 - Dec 2023</i></p>
-          <br>
           <h3>Patent</h3>
           <p>
             At SmileDirectClub, I worked on the reconstruction, positioning, and generative modeling of 3D teeth from smartphone images and co-authored a <a href="https://patents.justia.com/patent/11633260" target="_blank">patent</a> in this topic.
@@ -98,7 +108,6 @@
           <p>
             I was one of the key developers of the backend 2D-to-3D dental arch reconstruction model for <a href="https://www.globenewswire.com/news-release/2023/05/31/2679363/0/en/SmileDirectClub-Announces-U-S-Launch-of-Patented-SmileMaker-Platform.html" target="_blank">SmileMaker Platform</a>, an app which delivered personalized treatment plan previews for thousands of daily customers using AI-guided smartphone imaging.
           </p>
-
           <div class="row vertical-align">
             <div class="col-sm-6">
               <img src="resources/images/smp-2d-3d-corrs.png" class="img-responsive">
@@ -109,36 +118,42 @@
               <!-- <img src="resources/images/smp-3d-viewer.png" class="img-responsive"> -->
             </div>
           </div>
-          
           <h3>Vision Transformer Pre-training</h3>
           <p>
             After the initial launch, I pre-trained a Vision Transformer using self-supervised learning (<a href="https://arxiv.org/abs/2111.06377" target="_blank">MAE</a>) on over five million images collected by our app and integrated it as the backbone for our teeth segmentation model (which underlied all 3D reconstructions).
           </p>
           <p>
-            This dramatically improved segmentation robustness, especially to real-world imaging conditions (blurry and dimly lit smartphone photos) without requiring further manual annotation.
+            This dramatically improved segmentation robustness, especially in real-world imaging conditions (blurry and dimly lit smartphone photos), without requiring further manual annotation.
           </p>
           <video width="640" height="360" controls>
             <source src="resources/videos/mae-vit-teeth-seg-demo.mp4" type="video/mp4">
             Your browser does not support the video tag.
           </video>
         </div>
+
       </div>
+
+      <!-- SmileDirectClub -->
       <div class="row vertical-align experience-row">
+
         <div class="col-sm-4 experience-images">
-          <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/ccri-logo.png" class="img-responsive">
+          <img src="resources/images/ga-ccri-logos.png" class="img-responsive">
         </div>
+
         <div class="col-sm-8 experience-text">
           <h1>Data Scientist</h1>
           <p><i>Jan 2018 - Jul 2021</i></p>
           <br>
           <p>
-            <a href="https://ccri.com", target="_blank", rel="noreferrer noopener">CCRi</a> is a geospatial analytics company where I worked on various research projects involving maritime activity detection and vessel forcasting from large scale AIS trajectory data.
+            At <a href="https://www.ga-intelligence.com/", target="_blank", rel="noreferrer noopener">GA-CCRi</a> (now General Atomics Intelligence), a geospatial analytics company, I worked on government-contract research projects for maritime and aerospace activity detection using massive trajectory data sources.
           </p>
           <p>
-            I presented my work in a speaker role at the 2019 Tom Tom Applied Machine Learning Conference in a session named <a href="https://tomtomfestival2019.sched.com/event/M3Os/points-to-videos-extracting-behavioral-information-from-maritime-tracks-using-convolutional-neural-networks">Points to Videos: Extracting Behavioral Information from Maritime Tracks Using Convolutional Neural Networks</a>.
+            I presented my work in a speaker role at the 2019 Tom Tom Applied Machine Learning Conference in a session named <a href="https://tomtomfestival2019.sched.com/event/M3Os/points-to-videos-extracting-behavioral-information-from-maritime-tracks-using-convolutional-neural-networks", target="_blank">Points to Videos: Extracting Behavioral Information from Maritime Tracks Using Convolutional Neural Networks</a>.
           </p>
         </div>
       </div>
+
+      <!-- UVA -->
       <div class="row vertical-align experience-row">
         <div class="col-sm-4 experience-images">
           <img src="https://raw.githubusercontent.com/martin-chobanyan/martin-chobanyan.github.io/main/resources/images/uva-logo.png" class="img-responsive">
@@ -152,6 +167,7 @@
           </p>
         </div>
       </div>
+
     </div>
 
     <div class="row row-title", id="projects">
